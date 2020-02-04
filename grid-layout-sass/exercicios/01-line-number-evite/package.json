@@ -1,0 +1,15 @@
+{
+  "name": "01-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./ -o ./css",
+    "watch:sass": "node-sass -w ./ -o ./css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel compile:sass devserver watch:sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}

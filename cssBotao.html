@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font Lato e seus font-weight 100,300,400,700,900 -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <style>
+        /*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+        * {
+            box-sizing: border-box;
+            /* Include padding and border in the element's total width and height: */
+            margin: 0;
+            padding: 0;
+            outline: 0; /* remove dotted outline (bordar pontilhada) */
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #777;
+            padding: 30px;
+        }
+
+        /*-------------------------------*/
+
+        /*---------- Cabecalho ----------*/
+
+        /*-----------------------------------*/
+
+        .header {
+            height: 95vh;
+            /* 95% view port height */
+            background-size: cover;
+            /* background image is resized to cover the entire container */
+            background-image: linear-gradient( to right bottom,
+            rgba(126, 213, 111, 0.8),
+            rgba(40, 180, 131, 0.8)),
+            url(../img/hero.jpg);
+            background-position: top;
+            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+            position: relative;
+            /* para o absolute do logo funcionar corretamente */
+        }
+
+        .logo-box {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        .logo {
+            height: 35px;
+        }
+
+        /*
+apenas para mostra que a animacao funciona com hover (no meu nao animou certo)
+.logo:hover {
+  animation: moveInRight 1s ease-out;
+}
+*/
+
+        .text-box {
+            position: absolute;
+            top: 40%;
+            /* se refere ao elemento pai */
+            left: 50%;
+            /* se refere ao elemento pai */
+            transform: translate(-50%, -50%);
+            /* se refere ao proprio elemento */
+            text-align: center;
+            /* centraliza o botao 'discover our tour' */
+        }
+
+        .heading-primary {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            backface-visibility: hidden;
+            /* a animacao esta dando um 'pulo (shaking)', isso resolve */
+        }
+
+        .heading-primary-main {
+            display: block;
+            font-size: 60px;
+            font-weight: 400;
+            letter-spacing: 35px;
+
+            animation: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            /* quao rapido ou devagar a animacao ocorre */
+            /*
+  animation-iteration-count: 3;
+  animation-delay: 3s; esperar xsegundos depois que a pagina carregar para comecar animar.
+  */
+        }
+
+        .heading-primary-sub {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 17.4px;
+            animation: moveInRight 1s ease-out;
+        }
+
+        /*------------- Animacao do texto do cabecalho --------------------------*/
+
+        @keyframes moveInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+                /*transform: translateX(-100px) rotate(0deg);*/
+            }
+
+            60% {
+                /*transform: rotate(180deg);*/
+                /*transform: rotate(180deg);*/
+            }
+
+            80% {
+                transform: translateX(10px);
+                /*transform: translateX(10px) rotate(180deg);*/
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        @keyframes moveInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            80% {
+                transform: translateX(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        /*------------- fim Animacao do texto do cabecalho --------------------------*/
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all 0.2s;
+            /*all: deixa o elemento apto para todas animacoes que ele suporta */
+            position: relative;
+            /* para o position absolute do .btn::after funcionar */
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white {
+            background-color: #fff;
+            color: #777;
+        }
+
+
+
+
+        /*-------------------------------*/
+
+        /*---------- fim Cabecalho ----------*/
+
+        /*-----------------------------------*/
+    </style>
+
+    <title>Natours | Exciting tours for adventurous people</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-box">
+            <img src="img/logo-white.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Outdoors</span>
+                <span class="heading-primary-sub">is where life happend</span>
+            </h1>
+
+            <a href="#" class="btn btn-white">Discover our tour</a>
+        </div>
+    </header>
+
+</body>
+
+</html>

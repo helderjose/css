@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+
+/*
+shrink = encolher.
+flex-shrink
+o valor inicial é 1.
+flex-shrink: 1; allowed the element to shrink.
+flex-shrink: 0; impede o elemento de encolher.
+*/
+.i2 {
+    height: 200px;
+    /* flex-basis: 300px; */
+    /* flex-shrink: 1; */
+    /* flex-shrink: 0; */
+    /*
+    0 para flex-grow
+    1 para flex-shrink
+    300 para flex-basis
+    */
+    flex: 0 1 300px;
+    /* flex: 0 0 300px; */
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    align-self: flex-end;
+    order: -1;
+}

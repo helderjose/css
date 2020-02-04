@@ -1,0 +1,8 @@
+input:focus + label,
+input:valid:not(:optional) + label,
+input:disabled + label,
+select:focus + label,
+select--hasvalue + label,
+select[ng-reflect-model] + label {
+   css aqui
+}

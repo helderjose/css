@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            @font-face{
+                font-family: myFirstFont;
+                src: url(fonts/SansationLight.woff);
+            }
+            @font-face{
+                font-family: myFirstFont;
+                src: url(fonts/SansationBold.woff);
+                font-weight: bold;
+            }
+
+            body{
+                font-family: myFirstFont;
+            }
+        </style>
+
+    </head>
+    <body>
+    <p>Parágrafo de exemplo. <b>Bold exemplo</b></p>
+    </body>
+</html>

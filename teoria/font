@@ -1,0 +1,54 @@
+https://www.w3schools.com/cssref/pr_font_font.asp
+Tem exercícios no fim da página do w3schools
+https://www.w3schools.com/css/exercise.asp?filename=exercise_font1
+
+Defina as seguintes propriedades da fonte no elemento html:
+- font-size.
+
+Defina as seguintes propriedades da fonte no elemento body:
+- font-family;
+- font-weight;
+- line-height;
+- color.
+
+
+
+font
+- Especifica todas as propriedades da fonte em uma declaração.
+
+font-family
+- Se o nome da font-family tiver mais de uma palava, deve user aspas ("");
+- As font-family devem ser separadas por vírgula;
+- Comece com a font que você quer e termine com as mais genéricas (CSS Web Safe Combinations).
+- o navegador procura a font da direita para esquerda.
+
+font-style
+- Define o estilo do texto, como italic por exemplo.
+
+font-weight
+- Define o "peso" da fonte.
+
+font-variant
+- Especifica se um texto deve ou não ser exibido em uma fonte small-caps. (Letra minúscula fica maiúscula, só que menor que a fonte maiúscula)
+
+
+Exemplos:
+Responsive font size: Olhar no w3schools e fazer exemplos (vw)
+font-size: olhar o arquivo font-size (tenho que criar)
+
+font: italic bold 12px/30px Georgia, serif; //12 é o tamanho da fonte, 30 é o line-height
+font-family: "Times New Roman", Times, serif;
+
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+
+font-weight: normal;
+font-weight: bold;
+
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+
+font-variant: normal;
+font-variant: small-caps;

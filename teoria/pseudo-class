@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  /*box-sizing: border-box;*/ /* Include padding and border in the element's total width and height: */
+  box-sizing: inherit; /* herda body */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+::before
+- Insere algo antes do elemento.
+p::before{ content: "Read this: " }
+
+
+
+::after
+- Insere algo depois do elemento.
+p::after{ content: "Remember this: " }
+
+
+
+::selection
+- Edita o texto que o usuário seleciona.
+- color, background, cursor, and outline.
+
+
+
+:target

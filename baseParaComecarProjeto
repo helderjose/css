@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Defina as seguintes propriedades da fonte no elemento html:
+- font-size.
+
+Defina as seguintes propriedades da fonte no elemento body:
+- font-family;
+- font-weight;
+- line-height;
+- color.
+
+
+
+Defina as seguintes propriedades no elemento body:
+- box-sizing: border-box;
+
+Defina as seguintes propriedades nos elementos *, *::after, *::before
+- box-sizing: inherit;  // herda o box-sizing do body
+- margin: 0;
+- padding: 0;

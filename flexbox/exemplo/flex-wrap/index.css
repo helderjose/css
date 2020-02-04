@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Obs: Redimensione a tela para ver o efeito.
+*/
+/*
+flex-wrap
+Usado no container.
+
+- flex-wrap: nowrap; it's not wrapping into a new line. (default).
+- flex-wrap: wrap; it will create a new line for these flex items
+    that no longer fit the container.
+
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 5px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+    flex: 0 1 300px;
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    align-self: flex-end;
+    order: -1;
+}

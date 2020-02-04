@@ -1,0 +1,28 @@
+https://www.w3schools.com/css/css3_box-sizing.asp
+https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
+
+Em layout responsivo box-sizing ajuda muito.
+
+Defina as seguintes propriedades no elemento body:
+- box-sizing: border-box;
+
+Defina as seguintes propriedades nos elementos *, *::after, *::before
+- box-sizing: inherit;  // herda o box-sizing do body
+- margin: 0;
+- padding: 0;
+
+
+box-sizing: content-box; (default)
+O padding e a borda afetam a largura e altura do elemento, exemplo:
+width: 300px; padding: 10px; o div fica com 300px + 20px
+
+box-sizing: border-box;
+Inclui o padding e a border na largura e altura total do elemento. (a borda e o padding não alteram a largura e altura), exemplo:
+width: 300px; padding: 10px; o div fica com 300px (o espaço interno par ao conteúdo diminui).
+
+box-sizing: border-box;
+box-sizing: content-box; (default)
+box-sizing: inherit;
+box-sizing: initial;
+box-sizing: unset;
+

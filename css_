@@ -1,0 +1,157 @@
+https://fonts.google.com
+
+
+media
+https://developer.mozilla.org/en-US/docs/Web/CSS/%40media/orientation
+portrait / landscape
+@media screen and (orientation: landscape) {...}
+------------------------------------------------------
+
+media queries
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_types
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+@media print{...}
+@media screen, print{...}
+@media (min-resolution: 192dpi) {...} //usou para escolher o tamanho da imagem no projeto de exemplo
+@media (min-resolution: 192dpi) and (min-width: 600px) {...}
+@media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px){...} a "," é um or
+only screen and(hover: none){...} para dispositivos que não tem mouse hover.
+-----------------------------------------
+
+box-sizing: border-box;
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-sizing
+Include padding and border in the element's total width and height:
+---------------------------------------------------
+
+
+background-blend-mode: screen;
+-------------------------------------
+
+
+height: 95vh; /* 95% view port height */
+------------------------------------------------------
+
+desenhar triângulo com css
+bennettfeely.com/clippy
+------------------
+
+transform: translate(-50%, -50%); /* se refere ao proprio elemento */
+transform: skewX(-12deg);
+transform: scale(1.4); // zoom na imagem por exemplo
+transform: translateX(-3rem) skewX(12deg);
+
+transform: scaleY(0)
+transform-origin: bottom
+
+-----------------------------------------------
+
+box-shadow: x y;
+box-shadow: x y color;
+box-shadow: x y blur color;
+box-shadow: x y blur spreadRadius color;
+box-shadow: x y blur color, x y blur color, x y blur color; //Multiple shadows
+box-shadow: x y blur color inset; //sombra dentro do elemento
+
+exemplo "polaroid" picture: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+------------------------------------
+
+animation
+animation: moveInBottom .5s ease-out .75s; /* animation: nome duracao  delay */
+----------------------------------------------------
+
+keyframe
+----------------------------
+
+
+
+
+perspective
+-----------------
+
+
+backface-visibility: hidden;
+oculta defeitos na animção css (animação travando por exemplo, ou movendo alguns pixels para o lado (quando o movimento deveria ser só de baixo para cima)
+-------------------------------------
+
+
+
+
+
+
+box-decoration-break: clone;
+------------------------------
+
+
+
+shape e clip-path
+.shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orangered;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); // define a distãncia do texto
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); // define o tamanho do círculo
+    transform: translateX(-3rem);
+  }
+------------------------------------------------------
+
+
+filter: blur(3px) brightness(80%);
+----------------------------------------------
+
+
+object-fit: cover; similar ao background cover
+--------------------
+
+
+siblings selectors
++
+~ (irmão próximo "de baixo")
+------------------------------------------
+
+gradient
+radial-gradient()
+-------------------------------------
+
+cubic-bezier
+easings.net
+transition: transform .8s cubic-bezier();
+---------------------------------------------------
+
+column-count: 2;
+column-gap: 4rem;
+column-rule: 1px solid $color-grey-light-2;  //bordar entre as células
+---------------------------------
+
+hyphens: auto; //coloca ifen no texto
+--------------------
+
+backdrop-filter
+não funciona no chorme nem no ff, funciona no safari
+---------------------------
+
+@supports
+--------------------------
+
+placeholder
+--webkit-input-placeholder{...}
+--------------------------------------------
+
+border: radius
+100% fica menos serrilhado do que 50% (no círculo)
+-------------------------------------------
+
+fill
+fill: currentColor;
+----------------------------
+
+z-index só funciona se especificar position.
+-----------------------------------
+
+pseudo class
+:last-of-type
+------------------
+
+

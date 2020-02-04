@@ -1,0 +1,18 @@
+body{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/*
+font-family
+A fonte é procurada da esquerda para direita no sistema operacional.
+"Lucida Grande" é usada pelo Mac OS X.
+"Lucida Sans Unicode" usada pelo Windows
+*/
+
+/*
+line-height
+line-height 1.6 "sem px ou outra medida como em", indica que a altura da linha ficará em
+160% da altura da fonte. Caso ela estaja em 16px, o line-height será 25px. Caso o tamanho da
+fonte mude, a altura da linha acompanhará essa mudança, respeitando a regra de sempre ser 1.6 da altura da fonte.
+*/

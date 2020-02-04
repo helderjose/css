@@ -1,0 +1,55 @@
+.container{
+  background-color: #ccc;
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+  
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  
+  &--1 {
+    background-color: orangered;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    z-index: 10;
+  }
+  &--2 {
+    background-color: yellowgreen;
+
+    //evite regras que criam novas colunas.
+    /* será movido para uma nova linha porque posicionamos
+    explicitamente o grid 6 */
+    // grid-column: 1 / 3; // começa na coluna 1 e termina na coluna 3
+    // grid-column: 1 / span 2; //mesmo efeito da linha acima. começa na coluna 1 e faz span de duas colunas
+    // grid-column: 1 / span 3; //cria uma coluna nova porque não cabe no grid atual. começa na coluna 1 e faz span de 3 colunas
+    grid-column: 2 / span 2;
+    // grid-column: 2 / span 3; //cria uma nova coluna. evite esse tipo de instrução que cria nova coluna.
+  }
+  &--3 {
+    background-color: blueviolet;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  &--4 {
+    background-color: palevioletred;
+  }
+  &--5 {
+    background-color: royalblue;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    // grid-area: 1 / 3 / 3 / 4;
+  }
+  &--6 {
+    background-color: goldenrod;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+}

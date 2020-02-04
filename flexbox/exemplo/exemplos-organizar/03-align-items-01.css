@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+align-items
+Alinha os items no cross axis.
+
+stretch - default, deixa os items com o mesmo height e alinhado.
+center - alinhas os items menores em relação ao item
+    maior (height).
+flex-start - alinha os items no topo.
+flex-end - alinha os items em baixo.
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+
+    /* align-items: stretch; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+}

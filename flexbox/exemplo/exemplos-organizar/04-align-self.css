@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+}
+
+/*
+align-self
+align-self overrides the align-contents property
+for one individual item.
+
+- flex-end alinha no fim do cross axis
+- strech ocupa todo o height do container
+*/
+.i4 {
+    /*sobrescreve o align-items: do container*/
+    /* align-self: flex-start; */
+    align-self: flex-end; 
+    /* align-self: stretch; */
+    
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+obs: olhe a classe i4.
+
+align-items
+baseline - alinha pelo texto, observe como uma linha
+    imaginária em baio da fonte dos items.
+
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+
+    align-items: baseline;
+
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+}
+
+.i4 {
+    font-size: 70px;
+}

@@ -1,0 +1,11 @@
+https://www.w3schools.com/cssref/pr_class_position.asp
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=relative
+
+- Define o método de posicionamento de um elemento.
+position: static|absolute|fixed|relative|sticky|initial|inherit;
+
+position: relative;
+- O elemento será posicionado em relação à sua posição normal, então "left: 20px" adiciona 20 pixels à posição LEFT do elemento
+
+position: absolute;
+- O elemento é posicionado em relação ao primeiro elemento ancestral posicionado (não estático). Por isso usamos position:relative no elemento ancestral do elemento que definimos com positon:absolute.

@@ -1,0 +1,4 @@
+Quebra de linha com css.
+Um textarea e uma tag <p> para exibir o conteúdo do textarea com quebra de linha.
+
+<p style="white-space: pre">Message com style pre: {{ message }}</p>

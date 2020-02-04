@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+flex-grow: 1; os itens ocupam todo espaço disponível, width e height.
+*/
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    /* comente para ver ocupara todo espaço */
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+
+    flex: 1;
+    /* flex-grow: 1; */
+    /* flex e flex-grow é a mesma coisa */
+}
+
+.i2 {
+    height: 200px;
+    /* fica com o dobro do tamanho dos outros itens que
+    estao com flex-gro: 1, se colocar 3 fica com o 
+    triplo do tamanho e assim por diante */
+    /* flex-grow: 2; */
+    /* flex-grow: 3; */
+}
+
+.i3 {
+    order: 1;
+}
+
+.i4 {
+    align-self: flex-end;
+    order: -1;
+}

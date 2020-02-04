@@ -1,0 +1,15 @@
+//TODO: fazer exemplo
+
+/dados/helder/particular/programacao2/sass/advanced-css-course_helder/Natours/sass/layout/_header.scss
+
+
+&__text-box {
+    position: absolute;
+    top: 40%; /* se refere ao elemento pai */
+    left: 50%; /* se refere ao elemento pai */
+    transform: translate(-50%, -50%); /* se refere ao proprio elemento */
+    text-align: center; /* centraliza o botao 'discover our tour' */
+  }
+
+
+  https://www.w3schools.com/cssref/pr_class_position.asp

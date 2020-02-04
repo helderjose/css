@@ -1,0 +1,22 @@
+https://www.w3schools.com/cssref/pr_font_font-style.asp
+
+The font-style property specifies the font style for a text.
+
+Default value:	normal
+Inherited:	yes
+Animatable:	no.
+Version:	CSS1
+JavaScript syntax:	object.style.fontStyle="italic"
+
+
+# CSS Syntax
+font-style: normal|italic|oblique|initial|inherit;
+
+
+# Property Values
+Value	Description	Play it
+normal	The browser displays a normal font style. This is default	
+italic	The browser displays an italic font style	
+oblique	The browser displays an oblique font style	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit

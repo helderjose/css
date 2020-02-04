@@ -1,0 +1,9 @@
+As instruções que não tem comentários são de exemplos
+anteriores, caso não entenda algo que não está comentado, volte
+um exemplo.
+
+os exemplos dessa pasta usam SASS e está no .gitignore os arquivos .css.
+
+Para executar esses exemplos use o comando do package.json.
+Não precisa de npm install porque instalei os modules global.
+Se der erro verifique se todos os modules usados nos scripts estão instalados globalmente. (olhar o comando npm list -g... da pasta node)

@@ -1,0 +1,10 @@
+https://coolors.co/
+
+
+mudar cor do placeholder: colocar o css de cada fornecedor separado, (nunca colocar junto).
+
+
+
+opacity no ie8
+opacity: 0.4;
+filter: alpha(opacity=50); /* For IE8 and earlier */

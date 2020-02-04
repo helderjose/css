@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+flex-direction
+row - Default, O main axis fica da esquerda para direita.
+row-reverse - Da direita para esquerda. O main axis fida da direita
+    para esquerda.
+column - De cima para baixo, o main axis fica de cima para baixo.
+    nesse modo os div items ocupam toda largura disponível por padrão.
+column-reverse - O main axis fica de baixo para cima.
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}

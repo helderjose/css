@@ -1,0 +1,96 @@
+Exercícios: https://www.w3schools.com/css/exercise.asp?filename=exercise_css3_backgrounds1
+
+background
+- Define as propriedades de background em uma única declaração
+background: lightblue url("img_tree.gif") no-repeat fixed center;
+
+
+
+background-color
+- Define a cor de background de um elemento.
+background-color: orange; //define a cor do elemento para laranja.
+background-color: transparent;  (default)
+background-color: inherit;  //herda do elemento pai
+background-color: initial; // set o valor default (transparent)
+
+
+
+background-image
+- Define uma imagem de background de um elemento.
+background-image: url("img_tree.gif"), url("paper.gif");
+
+
+
+background-position
+- Posiciona a imagem de background.
+background-position: left top;
+			left top
+			left center
+			left bottom
+			right top
+			right center
+			right bottom
+			center top
+			center center
+			center bottom
+x% y%
+xpos ypos  //nesse pode misturar px e %
+
+
+
+background-size
+- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size3
+- Define o tamanho da imagem de background.
+background-size: auto; //a imagem é exibida no tamanho original. (default)
+background-size: length; //Define a largura e a altura da imagem de fundo. O primeiro valor define a largura, o segundo a altura.
+background-size: cover; //a imagem de fundo é redimensionada para cobrir todo o elemento.
+background-size: contain;
+background-size: initial;
+background-size: inherit; //herda do elemento pai.
+
+
+
+
+background-repeat
+- Define como a imagem de background será repetida.
+background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+
+
+
+background-origin
+- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-origin
+- Especifica o posicionamento de origem da imagem de background.
+background-origin: padding-box|border-box|content-box|initial|inherit;
+
+
+
+
+background-clip
+- https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
+- https://www.w3schools.com/cssref/css3_pr_background-clip.asp
+- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-clip
+- Define quanto o background deve se estender dentro de um elemento.
+background-clip: border-box|padding-box|content-box|initial|inherit|text;
+
+background-clip: border-box; //o background pega toda a extensão do elemento (incluindo padding e border).
+background-clip: padding-box; //o background ocupa apenas a área de conteúdo e paddin (não inclui a borda).
+background-clip: content-box; //o background se extende apenas na área de conteúdo (não pega a área de padding e border).
+background-clip: text; //O background aparece apenas no texto. Para conseguir o efeito de uma imagem aparecer apenas no texto deve-se usar color transparent
+
+
+
+
+background-attachment
+- Define se a imagem de fundo rola com a página ou é fixa. Muito usado em parallax scrolling effect (create an illusion of 3D depth).
+background-attachment: scroll|fixed|local|initial|inherit;
+
+background-attachment: scroll; //a imagem de fundo rola com a pagina.
+background-attachment: local; //A imagem de fundo rola com o elemento.
+
+
+
+
+background-blend-mode
+- Define o modo de mesclagem de cada camada de fundo (cor e / ou imagem).
+background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+

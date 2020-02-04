@@ -1,0 +1,50 @@
+//usando grid area name
+
+/*
+Grid ares names é indicado para layout pequeno, como
+o desse exemplo, evite em layout grande.
+Para layout grande com 12 ou 15 colunas e 10 ou 15 linhas
+evite usar gri area name, nesse caso prefira o grid line name.
+*/
+.challenge {
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    grid-gap: 30px;
+
+    //declarando area name
+    grid-template-areas:
+        "head head head head"
+        "box box box side"
+        "main main main side"
+        "foot foot foot foot"
+    ;
+
+    //seleciona todos os filhos de .challenge
+    & > * {
+        background-color: orangered;
+        padding: 20px;
+        color: white;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .header {
+        grid-area: head; //usando grid area name
+    }
+
+    .sidebar {
+        grid-area: side;
+    }
+
+    .main-content {
+        grid-area: main;
+    }
+
+    .footer {
+        grid-area: foot;
+    }
+}

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+jusfity-content
+Alinha os flex items no current main axis
+
+obs: considere que 1x é o espaço do div.
+
+flex-start - coloca os flex items todos à esquerda (default).
+flex-end - coloca os flex items todos à direita.
+center - alinha os itens no centro do container.
+space-between - alinha os flex items com o mesmo espaço
+    entre eles. Não coloca espaço do lado esquerdo do
+    primeiro elemento e nem no lado direito do último elemento.
+    ex: div 1x 1x div
+space-around - divide o espaço em volta do flex items,
+    aqui coloca espaço também do lado esquerdo do primeiro
+    elemento e do lado direito do último elemento.
+    O espaço do lado esquerdo do primeiro item fica com
+    1*x e o espaço entre o items fica 2*x.
+    ex: 1x div 1x 1x div 1x
+space-evenly - o espaço entre os items ficam todos com 1*x.
+    ex: 1x div 1x div 1x
+
+
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    flex-direction: row;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    /* margin: 30px; */
+    color: #fff;
+    font-size: 40px;
+}

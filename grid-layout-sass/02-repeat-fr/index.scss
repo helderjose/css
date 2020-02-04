@@ -1,0 +1,105 @@
+// .container{
+//   background-color: #ccc;
+//   width: 1000px;
+//   margin: 0 auto;
+  
+//   display: grid;
+
+//   grid-template-rows: repeat(2, 150px);//duas linhas de 150px de altura cada
+//   // grid-template-columns: repeat(3, 150px);//3 colunas de 150px largura cada.
+  
+//   //2 colunas de 150px largura e uma de 300px
+//   // grid-template-columns: repeat(2, 150px) 300px;
+
+//   /*
+//   fr = fractional
+//   The fractional unit represents a fraction of the available space.
+//   */
+//   grid-template-columns: repeat(2, 150px) 1fr;
+
+//   grid-gap: 20px;
+// }
+
+.container{
+  background-color: #ccc;
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+
+  /*
+  Exemplo colunas com o height total do container
+  */
+  // height: 1000px;
+  // grid-template-rows: repeat(2, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+
+  /*
+  três colunas: a coluna 2 vai ter o dobro do tamanho das outras
+  */
+  // grid-template-rows: repeat(2, 150px);
+  // grid-template-columns: 1fr 2fr 1fr;
+  // grid-template-columns: 50% 1fr 1fr;
+
+
+  /*
+  Exemplo três colunas iguais
+  */
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+
+
+
+  /*
+  Exemplo fractional.
+  fr = fractional
+  The fractional unit represents a fraction of the available space.
+  */
+  // grid-template-rows: repeat(2, 150px);
+  // grid-template-columns: repeat(2, 150px) 1fr; //2 colunas de 150px e 1 com o que sobrar
+
+
+
+  /*
+  Exemplo duas linhas de 150px altura
+  duas colunas de 150px largura e uma de 300px
+  */
+  // grid-template-rows: repeat(2, 150px);
+  // grid-template-columns: repeat(2, 150px) 300px;//2 colunas de 150px largura e uma de 300px
+
+
+
+  /*
+  Exemplo duas linhas de 150px de altura cada e
+  3 colunas de 150px de largura cada.
+  */
+  // grid-template-rows: repeat(2, 150px);//duas linhas de 150px de altura cada
+  // grid-template-columns: repeat(3, 150px);//3 colunas de 150px largura cada.
+}
+
+  
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  
+  &--1 {
+    background-color: orangered;
+  }
+  &--2 {
+    background-color: yellowgreen;
+  }
+  &--3 {
+    background-color: blueviolet;
+  }
+  &--4 {
+    background-color: palevioletred;
+  }
+  &--5 {
+    background-color: royalblue;
+  }
+  &--6 {
+    background-color: goldenrod;
+  }
+}

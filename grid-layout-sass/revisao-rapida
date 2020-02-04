@@ -1,0 +1,119 @@
+Fazer uma cópia desse arquivo e ir apagando conforme for revisando.
+ 
+display: grid;
+
+// duas linhas e 3 colunas
+grid-template-rows: 150px 150px;// altura  da linha 1 e linha 2 do grid, não dos itens
+grid-template-columns: 150px 150px 150px;// larguda das 3 colunas do grid
+
+gap = espaçamento entre os grids.
+grid-row-gap: 20px;
+grid-column-gap: 20px;
+grid-gap: 20px; //row e column
+
+===========================================================
+
+repeat
+
+Exemplo duas linhas de 150px de altura cada e
+3 colunas de 150px de largura cada.
+grid-template-rows: repeat(2, 150px);//duas linhas de 150px de altura cada
+grid-template-columns: repeat(3, 150px);//3 colunas de 150px largura cada.
+
+
+Exemplo duas linhas de 150px altura
+duas colunas de 150px largura e uma de 300px
+grid-template-rows: repeat(2, 150px);
+grid-template-columns: repeat(2, 150px) 300px;//2 colunas de 150px largura e uma de 300px
+
+
+Exemplo fractional.
+fr = fractional
+The fractional unit represents a fraction of the available space.
+grid-template-rows: repeat(2, 150px);
+grid-template-columns: repeat(2, 150px) 1fr; //2 colunas de 150px e 1 com o que sobrar
+
+
+Exemplo três colunas iguais
+grid-template-rows: repeat(2, 150px); duas linhas de 150px de altura.
+grid-template-columns: repeat(3, 1fr);  três colunas iguais.
+
+
+três colunas: a coluna 2 vai ter o dobro do tamanho das outras
+grid-template-rows: repeat(2, 150px);
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-columns: 50% 1fr 1fr;
+
+
+Exemplo colunas com o height total do container
+height: 1000px;
+grid-template-rows: repeat(2, 1fr); //height de cada linha = (1000px - gap) / 2
+grid-template-columns: repeat(3, 1fr);  /width de cada coluna = (100% - gap) / 3
+===========================================================
+
+
+----- Positioning Grid Items -----
+Exemplo grid-row e grid-column
+grid-row-start: 2; //começa na linha 2
+grid-row-end: 3; //termina na linha 3
+grid-column-start: 2; //começa na coluna 2
+grid-column-end: 3; //termina na coluna 3
+
+// mesmo efeito das linhas acima
+grid-row: 2 / 3; //começa na linha 2 e termina na linha 3
+grid-column: 2 / 3; //começa na coluna 2 e termina na coluna 3
+
+
+Exemplo grid-area
+grid-row: 1 / 2;
+grid-column: 3 / 4;
+
+// mesmo efeito do de cima
+// começa na linha 1, começa na coluna 3, termina na linha 2, termina na coluna 4
+// essa sintaxe é mais curta, porém, mais confusa. Por isso prefira a de cima.
+grid-area: 1 / 3 / 2 / 4;
+
+---- span ----
+funciona com column e com row.
+//começa na coluna 2 e faz span de duas céluas (pega as células 2 e 3).
+grid-column: 2 / span 2;
+
+----- espaço disponível -----
+-1 representa o espaço disponível
+//começa na coluna 1 e vai até o final do grid.
+grid-column: 1 / -1;
+===========================================================
+
+----- line names -----
+//declarando names
+grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
+grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+
+//usando names
+.header { grid-column: col-start 1 / grid-end; }
+--
+.sidebar {
+grid-column: col-end 3 / grid-end; //usando name
+grid-row: box-start / main-end; //usando name
+--
+.main-content { grid-column: col-start 1 / col-end 3; }
+--
+.footer { grid-column: col-start 1 / grid-end; }
+===========================================================
+
+
+--- grid are name -----
+Use somente em layout pequeno.
+
+ //declarando area name
+grid-template-areas:
+    "head head head head"
+    "box box box side"
+    "main main main side"
+    "foot foot foot foot";
+
+//usando gria are declarado acima.
+.header { grid-area: head; }
+.sidebar { grid-area: side; }
+.main-content { grid-area: main; }
+.footer { grid-area: foot; }

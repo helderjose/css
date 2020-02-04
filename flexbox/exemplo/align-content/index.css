@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Obs: Redimensione a janela até obter duas linhas.
+*/
+
+/*
+align-content, it controls how the rows are aligned
+along the cross axis, similar to align-items.
+
+- align-content: stretch; It just stretches the rows. This is
+    pretty similar to like space-between. (default)
+- align-content: flex-start; Alinha no começo (top) do container.
+- align-content: flex-end; Alinha no fim (bottom) do container.
+- align-content: center; Alinha no centro do container.
+- align-content: space-around; Distribui o espaço entre as linhas.
+- align-content: space-between; Uma linha no topo e outra no bottom
+    do container.
+*/
+.container {
+    background-color: #ccc;
+    padding: 10px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: stretch;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 30px;
+    margin: 5px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+    flex: 0 1 300px;
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    /* align-self: flex-end; */
+    order: -1;
+}
