@@ -4,11 +4,13 @@ No fim da página tem exercícios.
 
 
 ## background-color
+https://www.w3schools.com/cssref/pr_background-color.asp
 The background-color property specifies the background color of an element.
 background-color: lightblue;
 
 
 ## background-image:
+https://www.w3schools.com/cssref/pr_background-image.asp
 The background-image property specifies an image to use as the background of an element.
 By default, the image is repeated so it covers the entire element.
 background-image: url("paper.gif");
@@ -24,6 +26,7 @@ background-repeat: no-repeat;
 
 
 ## background-position
+https://www.w3schools.com/cssref/pr_background-position.asp
 The background-position property is used to specify the position of the background image.
 Examples:
 background-position: right top;
@@ -35,6 +38,7 @@ background-attachment: fixed;
 background-attachment: scroll;
 
 # CSS background - Shorthand property
+https://www.w3schools.com/cssref/css3_pr_background.asp
 To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
 The shorthand property for background is background.
 When using the shorthand property the order of the property values is:
@@ -47,4 +51,3 @@ It does not matter if one of the property values is missing, as long as the othe
 
 Ex:
 background: #ffffff url("img_tree.png") no-repeat right top;
-
