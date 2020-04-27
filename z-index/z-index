@@ -1,0 +1,37 @@
+obs: conteúdo pendente, olhar no site
+
+https://www.w3schools.com/cssref/pr_pos_z-index.asp
+
+
+Definition and Usage:
+The z-index property specifies the stack order of an element.
+An element with greater stack order is always in front of
+an element with a lower stack order.
+
+Note: z-index only works on
+positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+
+
+Default value: 	    auto
+Inherited: 	        no
+Animatable: 	      yes.
+Version: 	          CSS2
+JavaScript syntax: 	object.style.zIndex="-1"
+
+
+CSS Syntax
+z-index: auto|number|initial|inherit;
+
+
+Property Values
+Value 	  Description
+auto 	    Sets the stack order equal to its parents. This is default
+number 	  Sets the stack order of the element. Negative numbers are allowed
+initial 	Sets this property to its default value.
+inherit 	Inherits this property from its parent element.
+
+
+z-index só funciona se especificar position.
+aceite números positivos e negativos
+
+

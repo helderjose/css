@@ -1,0 +1,16 @@
+obs: conteúdo pendente, olhar o site
+
+https://www.w3schools.com/html/html5_svg.asp
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+Propriedades:
+stroke
+stroke-width
+fill
+
+
+stroke é como se fosse a borda
+fill como se fosse o background

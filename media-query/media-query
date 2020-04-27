@@ -1,0 +1,31 @@
+obs: conteúdo pendente, olhar no site
+
+https://www.w3schools.com/css/css3_mediaqueries.asp
+
+
+# CSS3 Media Types
+Value 	Description
+all 	  Used for all media type devices
+print 	Used for printers
+screen 	Used for computer screens, tablets, smart-phones etc.
+speech 	Used for screenreaders that "reads" the page out loud
+
+
+# Organizar
+
+media
+https://developer.mozilla.org/en-US/docs/Web/CSS/%40media/orientation
+portrait / landscape
+@media screen and (orientation: landscape) {...}
+------------------------------------------------------
+
+media queries
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_types
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+@media print{...}
+@media screen, print{...}
+@media (min-resolution: 192dpi) {...} //usou para escolher o tamanho da imagem no projeto de exemplo
+@media (min-resolution: 192dpi) and (min-width: 600px) {...}
+@media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px){...} a "," é um or
+only screen and(hover: none){...} para dispositivos que não tem mouse hover.
+-----------------------------------------

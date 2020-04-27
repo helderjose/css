@@ -1,0 +1,45 @@
+obs: conteúdo pendente, olhar o site.
+
+https://www.w3schools.com/html/html_css.asp
+
+Styling HTML with CSS
+
+CSS stands for Cascading Style Sheets.
+
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+CSS can be added to HTML elements in 3 ways:
+
+Inline   - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file. (using <link rel="stylesheet" href="styles.css"> in <head> section)
+
+
+inline
+<h1 style="color:blue;">This is a Blue Heading</h1>
+
+internal
+<html>
+  <head>
+    <style>
+      body {background-color: powderblue;}
+      h1   {color: blue;}
+      p    {color: red;}
+    </style>
+  </head>
+  <body>
+    <!-- demais elementos html -->
+  </body>
+</html>
+
+external
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- demais elementos html -->
+  </body>
+</html>
