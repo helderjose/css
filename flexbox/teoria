@@ -1,4 +1,5 @@
-O div que é display:flex é chamado de flex container, cada elemento dentro dele é chamado de flex item.
+O div que é display:flex é chamado de flex container, cada elemento dentro dele é
+chamado de flex item.
 A linha x é a "main axis".
 A linha y é a "cross axis".
 
