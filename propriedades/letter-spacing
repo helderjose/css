@@ -1,0 +1,36 @@
+https://www.w3schools.com/cssref/pr_text_letter-spacing.asp
+
+Definition and Usage
+
+The letter-spacing property increases or decreases the space between characters in a text.
+
+Default value: 	    normal
+Inherited: 	        yes
+Animatable: 	      yes
+Version: 	          CSS1
+JavaScript syntax: 	object.style.letterSpacing="3px"
+
+
+CSS Syntax
+letter-spacing: normal|length|initial|inherit;
+
+
+Property Values
+Value 	  Description
+normal 	  No extra space between characters (0px). This is default
+length 	  Defines an extra space between characters (negative values are allowed).
+initial 	Sets this property to its default value.
+inherit 	Inherits this property from its parent element.
+
+
+
+Examples
+h1 { letter-spacing: 3px; }
+h2 { letter-spacing: -1px; }
+h3 { letter-spacing: 1cm; }
+h4 { letter-spacing: normal; }
+h5 { letter-spacing: initial; }
+h6 { letter-spacing: inherit; }
+em
+rem
+%
