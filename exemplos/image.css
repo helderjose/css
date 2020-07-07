@@ -1,0 +1,12 @@
+/*
+  alt
+  Cor no atributo alt
+*/
+img[alt] {
+  color: red;
+  /* demais atributos de fonte */
+}
+
+img {
+  color: red;
+}
