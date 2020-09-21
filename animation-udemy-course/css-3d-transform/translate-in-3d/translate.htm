@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>translate in 3D</title>
+<style type="text/css">
+
+body {
+	/* precisa do perspective para funcionar o translateZ */
+	/* perspective é a distância da tela até o olho */
+	perspective: 500px;
+}
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 1s;
+}
+
+img:hover {
+	/* vai ficar maior que a tela porque 800px é maior que 500px da perspective */
+	transform: translateZ(800px);
+	/* transform: translateZ(300px); */
+	/*
+		scale mexe na width e height do elemento, o perspective não altera.
+
+		perspective: 500px;
+		transform: translateZ(300px);   aumenta 300px em relação à 500px
+	*/
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="">
+
+</body>
+</html>
