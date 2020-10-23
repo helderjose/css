@@ -11,6 +11,8 @@
 1. button-hover-9
 1. button-hover-10
 1. button-hover-11
+1. button-hover-12
 
 estou
-1. button-hover-12
+1. button-hover-13, assisti ao vídeo, agora vou criar uma
+cópia do css, deixar as bolinhas coloridas e escrever explicação de cada linha
