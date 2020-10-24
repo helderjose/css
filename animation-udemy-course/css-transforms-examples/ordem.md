@@ -12,7 +12,9 @@
 1. button-hover-10
 1. button-hover-11
 1. button-hover-12
+1. button-hover-13
+1. button-hover-14 - mix-blend-mode ("mistura das cores")
+1. button-hover-15
 
 estou
-1. button-hover-13, assisti ao vídeo, agora vou criar uma
-cópia do css, deixar as bolinhas coloridas e escrever explicação de cada linha
+1. button-hover-16 - ainda tenho que assistir ao vídeo
