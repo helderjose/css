@@ -44,6 +44,7 @@ a:after {
   border-top: 2px solid orange;
   border-bottom: 2px solid black;
   transition: all 1s;
+  transition-delay: 0.2s;
 }
 
 a:hover:before {

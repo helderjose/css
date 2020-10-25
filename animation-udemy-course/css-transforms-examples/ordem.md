@@ -15,6 +15,12 @@
 1. button-hover-13
 1. button-hover-14 - mix-blend-mode ("mistura das cores")
 1. button-hover-15
+1. button-hover-16
+1. button-hover-17
+1. image-hover-1
+1. image-hover-2
+1. image-hover-3
+1. image-hover-4
 
 estou
-1. button-hover-16 - ainda tenho que assistir ao vídeo
+1. image-hover-5 - preciso assistir ao vídeo

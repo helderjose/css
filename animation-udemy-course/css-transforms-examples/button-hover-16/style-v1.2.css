@@ -22,28 +22,32 @@ a {
   background-color: bisque;
 }
 
-a:before {
+a:before,
+a:after {
   content: "";
   position: absolute;
+  transition: all 0.4s;
+}
+
+/* bordas verticais */
+a:before {
   height: 90px;
   width: 200px;
   top: -15px;
   left: 0;
   border-left: 2px solid red;
   border-right: 2px solid blue;
-  transition: all 1s;
 }
 
+/* bordas horizontais */
 a:after {
-  content: "";
-  position: absolute;
   height: 60px;
   width: 230px;
   top: 0;
   left: -15px;
   border-top: 2px solid orange;
   border-bottom: 2px solid black;
-  transition: all 1s;
+  transition-delay: 0.4s;
 }
 
 a:hover:before {
