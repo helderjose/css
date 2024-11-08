@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS animation, transitions and transforms</title>
+
+	<!-- OUR STYLESHEET -->
+	<!-- <link rel="stylesheet" href="style.css" type="text/css" media="all"> -->
+	<style>
+		/*
+			transition-property
+			transition-duration
+		*/
+
+		button {
+			height: 90px;
+			width: 290px;
+			font-size: 28px;
+			color: white;
+			border: none;
+			background-color: blue;
+
+			transition-property: background-color;
+
+			/* em milessegundos */
+			transition-duration: 1000ms;
+
+			/* a animação vai começar dois segundos depois */
+			/* transition-delay: 2s; */
+
+			/* em segundos */
+			/* transition-duration: 1s; */
+		}
+
+		button:hover {
+			background-color: green;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button>css transition</button>
+
+</body>
+
+</html>
