@@ -6,9 +6,14 @@
   "scripts": {
     "watch:sass": "node-sass -w index.scss index.css",
     "devserver": "live-server",
+    "first:sass:build": "node-sass index.scss index.css",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5"
+  }
 }

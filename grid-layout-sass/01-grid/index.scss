@@ -2,7 +2,7 @@
     background-color: #eee;
     width: 1000px;
     margin: 0 auto;
-    
+
     display: grid;
     grid-template-rows: 150px 150px;// altura  da linha 1 e linha 2 do grid, não dos itens
     grid-template-columns: 150px 150px 150px;// larguda das 3 colunas do grid
@@ -10,13 +10,13 @@
     // grid-column-gap: 20px;
     grid-gap: 20px;
   }
-  
+
   .item {
     padding: 20px;
     font-size: 30px;
     font-family: sans-serif;
     color: white;
-    
+
     &--1 {
       background-color: orangered;
     }
