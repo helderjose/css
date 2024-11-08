@@ -1,0 +1,23 @@
+# CSS 2D transforms
+
+
+transform: translate(-500px, 200px);
+--------------------------------------------
+
+
+scale
+Obs: tem vários scale, como X, Y, Z e etc
+transform: scale(2);
+---------------------------------------------
+
+rotate
+se usar valor negativo roda para a esquerda.
+----------------------------------------------
+
+skew
+dá para usar valor negativo
+----------------------------------------
+
+transform-origin
+https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/learn/lecture/11763400#overview
+-----------------------------------
