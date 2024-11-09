@@ -20,9 +20,13 @@ img {
 }
 
 img:hover {
-	/* vai ficar maior que a tela porque 800px é maior que 500px da perspective */
-	transform: translateZ(800px);
-	/* transform: translateZ(300px); */
+	/*
+		vai ficar maior que a tela porque 800px é maior que 500px da perspective
+		declarada no body
+	*/
+	/* transform: translateZ(800px); */
+
+	transform: translateZ(300px);
 	/*
 		scale mexe na width e height do elemento, o perspective não altera.
 
@@ -36,7 +40,7 @@ img:hover {
 
 <body>
 
-	<img src="cat.jpg" alt="">
+	<img src="../images/cat.jpg" alt="">
 
 </body>
 </html>

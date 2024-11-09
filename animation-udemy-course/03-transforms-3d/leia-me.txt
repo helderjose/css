@@ -1,0 +1,7 @@
+A diferença da animação 3d para a 2d é que na 3d tem o eixo z.
+
+transform: translateZ()
+aceita valor negativo
+--------------------------------------
+
+transform: rotate()
