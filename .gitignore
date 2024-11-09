@@ -1,4 +1,4 @@
-package-lock.json
-
 grid-layout-sass/**/css
 grid-layout-sass/**/*.css
+
+node_modules
