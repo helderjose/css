@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animatin, transitions and transforms</title>
+
+  <!-- OUR STYLESHEET -->
+  <!-- <link rel="stylesheet" href="style.css" type="text/css" media="all"> -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      animation-name: moving;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+
+      /* quantas vezes a animação será feita */
+      animation-iteration-count: 1;
+      /* animation-iteration-count: infinite; */
+
+      animation-timing-function: linear;
+    }
+
+    @keyframes moving {
+      0% {
+        transform: translateX(500px);
+      }
+
+      50% {
+        transform: translateX(1000px);
+      }
+
+      100% {
+        transform: translate(1000px, 500px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+
+</body>
+
+</html>

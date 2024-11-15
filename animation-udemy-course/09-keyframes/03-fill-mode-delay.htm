@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS animatin, transitions and transforms</title>
+
+  <!-- OUR STYLESHEET -->
+  <!-- <link rel="stylesheet" href="style.css" type="text/css" media="all"> -->
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      animation-name: moving;
+      animation-duration: 5s;
+
+      /* o último estágio (100%) do @keyframes */
+      /* animation-fill-mode: forwards; */
+
+      /* ao terminar a animação volta o elemento para sua posição original */
+      /* animation-fill-mode: backwards; */
+
+      animation-fill-mode: both;
+
+      /* tempo de espera para a animação começar, como se fosse o setTimeout */
+      animation-delay: 2s;
+    }
+
+    @keyframes moving {
+      0% {
+        transform: translateX(500px);
+      }
+
+      50% {
+        transform: translateX(1000px);
+      }
+
+      100% {
+        transform: translate(1000px, 500px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+
+</body>
+
+</html>
