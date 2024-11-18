@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS animatin, transitions and transforms</title>
+
+	<!-- OUR STYLESHEET -->
+	<!-- <link rel="stylesheet" href="style.css" type="text/css" media="all"> -->
+	<style>
+		.banner {
+			height: 100vh;
+			background: url(../images/background.png);
+			background-position: 0 0;
+			animation: animated-pattern 15s linear infinite;
+		}
+
+		@keyframes animated-pattern {
+			from {
+				background-position: 0 0
+			}
+
+			to {
+				/* 800px e 600px sao as medidas da imagem */
+				background-position: 800px 600px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="banner"></div>
+
+</body>
+
+</html>
