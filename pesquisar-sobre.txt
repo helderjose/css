@@ -2,4 +2,17 @@ pointer-events
 https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
 https://www.w3schools.com/cssref/css3_pr_pointer-events.php
 /data/helder/programacao2/css/css/animation-udemy-course/12-javascript-animation/02-website-parallax/website parallax effect with javascript/index.html
+----------------------------
+
+background-clip
+/data/helder/programacao2/css/css/animation-udemy-course/10-animations/10-text-background.htm
+-------------------------------------------
+
+inset
+		.content {
+			position: absolute;
+			inset: 0;
+			overflow: hidden;
+		}
+------------------------------------------
 
