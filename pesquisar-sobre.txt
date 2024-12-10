@@ -16,3 +16,9 @@ inset
 		}
 ------------------------------------------
 
+container query
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries
+-----------------------------------------------------
+
+pesquiser por:
+css new features 2024
