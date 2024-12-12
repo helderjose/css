@@ -20,5 +20,12 @@ container query
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries
 -----------------------------------------------------
 
+fancy border radiur
+https://9elements.github.io/fancy-border-radius/full-control.html
+
+border radius
+/data/helder/programacao2/css/css/animation-udemy-course/10-animations/34-loading-fancy-border.html
+-------------------------
+
 pesquiser por:
 css new features 2024
