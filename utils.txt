@@ -1,2 +1,9 @@
+https://cssbattle.dev/
 https://cssgradient.io/
+
+
+loader
+https://css-loaders.com/
+https://cssloaders.github.io/
+https://freefrontend.com/css-loaders/
 
