@@ -29,3 +29,11 @@ border radius
 
 pesquiser por:
 css new features 2024
+------------------------------------------------
+
+box-reflect
+https://www.w3schools.com/cssref/css_pr_box-reflect.php
+https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-box-reflect
+/data/helder/programacao2/css/css/animation-udemy-course/10-animations/43-button-neon.html
+---------------------------------------------------
+
