@@ -1,0 +1,5 @@
+filter: hue-rotate
+/data/helder/programacao2/css/css/animation-udemy-course/12-javascript-animation/04-colorful-text.html
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate
+https://www.w3schools.com/cssref/func_hue-rotate.php
+

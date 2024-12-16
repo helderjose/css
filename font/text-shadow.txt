@@ -1,0 +1,5 @@
+text-shadow
+/data/helder/programacao2/css/css/animation-udemy-course/12-javascript-animation/08-animated-banner.html
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+
