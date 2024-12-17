@@ -10,3 +10,6 @@ https://css-loaders.com/
 https://cssloaders.github.io/
 https://freefrontend.com/css-loaders/
 
+icones - free
+https://ionic.io/ionicons
+

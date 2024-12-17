@@ -2,3 +2,75 @@
 preciso assistir e copiar o código, não tem o código para download
 https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/learn/lecture/40970838#overview
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #20415c;
+    }
+
+    .navigation {
+      position: relative;
+
+    }
+
+    .toggle {
+      position: relative;
+      width: 75px;
+      height: 75px;
+      background: #ff4886;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .toggle::before {
+      content: "+";
+      position: absolute;
+      font-size: 3em;
+      color: #fff;
+      transition: 1.5s;
+    }
+
+    .toggle.active::before {
+      transform: rotate(225deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="toggle"></div>
+    <div class="menu"></div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    let toggle = document.querySelector('.toggle');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>
