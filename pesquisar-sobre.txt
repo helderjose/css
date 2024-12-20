@@ -37,3 +37,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-box-reflect
 /data/helder/programacao2/css/css/animation-udemy-course/10-animations/43-button-neon.html
 ---------------------------------------------------
 
+mix-blend-mode
+/data/helder/programacao2/css/css/animation-udemy-course/04-buttons-effects-using-transforms/13-open-close.htm
+https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode
+https://www.w3schools.com/cssref/pr_mix-blend-mode.php
+-----------------------------------------
