@@ -42,3 +42,11 @@ mix-blend-mode
 https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode
 https://www.w3schools.com/cssref/pr_mix-blend-mode.php
 -----------------------------------------
+
+backdrop-filter
+/data/helder/programacao2/css/css/animation-udemy-course/04-buttons-effects-using-transforms/23-glassmorphism.html
+https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php
+--------------------------------------------
+
+
