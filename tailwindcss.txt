@@ -1,0 +1,16 @@
+built in
+https://v3.tailwindcss.com/docs/responsive-design
+-----------------------------
+
+personalized size screen
+mobile first
+[@media(min-width:1024px)]:tw-class
+[@media(min-width:1024px)]:inline
+
+
+dark mode
+https://v3.tailwindcss.com/docs/dark-mode
+
+
+Other media query modifiers
+https://v3.tailwindcss.com/docs/hover-focus-and-other-states#media-and-feature-queries

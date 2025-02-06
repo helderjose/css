@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    // em tela a partir de 1024px
+    width: 50%
+  }
+}
