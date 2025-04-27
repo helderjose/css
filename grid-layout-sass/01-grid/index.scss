@@ -1,15 +1,17 @@
-.container{
-    background-color: #eee;
-    width: 1000px;
-    margin: 0 auto;
+.container {
+  background-color: #eee;
+  width: 95%;
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-rows: 150px 150px;// altura  da linha 1 e linha 2 do grid, não dos itens
-    grid-template-columns: 150px 150px 150px;// larguda das 3 colunas do grid
-    // grid-row-gap: 20px;
-    // grid-column-gap: 20px;
-    grid-gap: 20px;
-  }
+  display: grid;
+
+  /* cria um grid com duas linhas e três colunas */
+  grid-template-rows: 150px 150px; // altura  da linha 1 e linha 2 do grid, não dos itens
+  grid-template-columns: 150px 150px 150px; // larguda das 3 colunas do grid
+
+  // grid-row-gap: 20px;
+  // grid-column-gap: 20px;
+  grid-gap: 20px;
 
   .item {
     padding: 20px;
@@ -20,19 +22,25 @@
     &--1 {
       background-color: orangered;
     }
+
     &--2 {
       background-color: yellowgreen;
     }
+
     &--3 {
       background-color: blueviolet;
     }
+
     &--4 {
       background-color: palevioletred;
     }
+
     &--5 {
       background-color: royalblue;
     }
+
     &--6 {
       background-color: goldenrod;
     }
   }
+}
