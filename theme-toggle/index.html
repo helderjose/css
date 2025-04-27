@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Theme Toggle</title>
+  <link rel="icon" type="image/x-icon" href="#">
+  <style>
+    /* Default Light Theme (CSS Variables in :root) */
+    :root {
+      --page-background: #f8f8f8;
+      --text-primary: #333;
+      --accent-color: #007bff;
+      --container-background: #ffffff;
+      --container-border: #ddd;
+    }
+
+    /* Dark Theme Overrides (using .dark class) */
+    body.dark {
+      --page-background: #222;
+      --text-primary: #eee;
+      --accent-color: #fff;
+      --container-background: #333;
+      --container-border: #555;
+    }
+
+    body {
+      background-color: var(--page-background);
+      color: var(--text-primary);
+      font-family: sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      background-color: var(--container-background);
+      border: 1px solid var(--container-border);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      transition: color 0.3s ease;
+    }
+
+    p {
+      transition: color 0.3s ease;
+    }
+  </style>
+</head>
+
+<!-- <body class="light"> -->
+
+<body class="dark">
+  <button id="theme-toggle" type="button">toggle theme</button>
+  <div class="container">
+    <h1>Welcome to Themed Content</h1>
+    <p>This demonstrates light and dark themes using CSS variables. The dark theme is applied by default by the class on
+      the body.</p>
+  </div>
+
+  <script>
+    const btn = document.getElementById("theme-toggle")
+    // btn.addEventListener("click", () => {
+    // document.body.classList.toggle('dark')
+    // })
+  </script>
+</body>
+
+</html>

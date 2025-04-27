@@ -14,3 +14,36 @@ https://v3.tailwindcss.com/docs/dark-mode
 
 Other media query modifiers
 https://v3.tailwindcss.com/docs/hover-focus-and-other-states#media-and-feature-queries
+----------------------------------------
+
+reset css
+Tailwind já vem com reset css.
+Para sobrescrever use o tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        button: {
+          border: 'solid 2px',
+          padding: '4px 8px',
+        },
+
+        div: {
+          borderColor: 'unset',
+        },
+      });
+    },
+  ],
+}
+
+-------------------------------------------
+  
