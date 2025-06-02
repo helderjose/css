@@ -1,0 +1,10 @@
+
+https://www.udemy.com/course/advanced-react/learn/lecture/39474984#overview
+https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
+
+/data/helder/programacao2/react/react/react-js/exemplos/design-system/styled-component/udemy/02-ds-patterns-spacing/src/components/9-media-werapper-pattern/start.jsx
+
+
+
+trabalhando com video e imagem
