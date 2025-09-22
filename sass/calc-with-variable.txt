@@ -1,0 +1,16 @@
+  ul {
+    $gap-large: 20px;
+
+    @media (min-width: 1024px) {
+      gap: $gap-large;
+    }
+
+    li {
+      overflow: hidden;
+
+      @media (min-width: 1024px) {
+        width: calc((100% / 4) - #{$gap-large});
+      }
+
+    }
+  }
