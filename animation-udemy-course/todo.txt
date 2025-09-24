@@ -1,1 +1,4 @@
+estou passando para o storybook, olhar:
+/data/helder/programacao2/react/react/react-typescript/exemplos/animations/css-animations
+
 talvez seja legal colocar o storybook para facilitar ver os exemplos
